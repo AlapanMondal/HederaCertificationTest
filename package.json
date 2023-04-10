@@ -1,0 +1,36 @@
+{
+  "name": "hedera-certification-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "createNewAccounts": "node scripts/accounts/createNewAccounts.js",
+
+    "createToken": "node scripts/fungibleToken/createToken.js",
+    "queryToken": "node scripts/fungibleToken/queryToken.js",
+    "increaseTokenSupply": "node scripts/fungibleToken/increaseTokenSupply.js",
+    "associateAccounts": "node scripts/fungibleToken/associateTokenWithAccounts.js",
+    "transferTokenToMultipleAccounts": "node scripts/fungibleToken/transferTokenToMultipleAccounts.js",
+    "pauseToken": "node scripts/fungibleToken/pauseToken.js",
+    "transferToken": "node scripts/fungibleToken/transferToken.js",
+    "unPauseToken": "node scripts/fungibleToken/unPauseToken.js",
+
+    "scheduleTxn": "node scripts/scheduleTxn/scheduleTxn.js",
+    "submitSign": "node scripts/scheduleTxn/submitSign.js",
+
+    "multiSign": "node scripts/multiSign/multiSign.js",
+
+    "smartContract": "node scripts/smartContractService/scs.js",
+
+    "consensus": "node scripts/consensus/consensus.js",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alapan",
+  "license": "ISC",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.24.0",
+    "dotenv": "^16.0.3",
+    "web3": "^1.9.0"
+  }
+}
